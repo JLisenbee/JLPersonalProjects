@@ -1,5 +1,3 @@
-extern crate rand;
-
 struct Dice {
     num: u32,   // Number of dice to roll
     face: u32,  // Highest value face on the dice
