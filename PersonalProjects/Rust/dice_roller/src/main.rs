@@ -28,22 +28,24 @@ fn main() {
     for n in rolls { 
         print!("{} ", n.floor() as u32);
     }
-    println!("\nFor a total of {}", total);
+    println!("\nThe total for your roll is: {}", total);
 
     // Give fun statistics
     let average: f32 = ((1.0 + die.face as f32) / 2.0) * die.num as f32;
-    print!("The average for rolling this set up of dice is {}, ", average);
-
     let distance: f32 = (total - average).abs();
+    println!("The average for rolling this set up of dice is: {}", average);
+    print!("You were {}% from the average, ", (((total - average)/average) * 100.0).round());
 
     // Under by more than 20%: Yikes!
-    if total < average as f32 && distance > average * 0.2 {print!("yikes!");}
+    if total < average && distance > average * 0.2 {print!("yikes!");}
     // Under and Within 20%: So close!
-    if total < average && distance < average * 0.2 {print!("so close!");}
+    if total < average && distance <= average * 0.2 {print!("so close!");}
     // Over and within 20%: Nice roll!
-    if total > average && distance < average * 0.2 {print!("nice roll!");}
+    if total > average && distance <= average * 0.2 {print!("nice roll!");}
     // Over by more than 20%: Wow!
     if total > average && distance > average * 0.2 {print!("wow!");}
+    // Exactly on: Perfectly balanced, as all things should be...
+    if distance == 0.0 {print!("perfectly balanced as all things should be...");}
 
     println!("");
 
@@ -109,28 +111,4 @@ fn get_die() -> Vec<char>
     }
 
     return input;
-}
-
-fn roll_die(num: u32, face: u32) -> (f32, Vec<f32>)
-{
-    // Actually roll the dice
-    let mut result: f32;                // Updated in loop with each newest loop
-    let mut total: f32 = 0.0;           // Running Total
-    let mut rolls: Vec<f32>;   // Running list of rolls
-    for _i in 0..num {
-        result = fastrand::u32(1..face) as f32;
-        total = total + result;
-        rolls.push(result);
-    }
-
-
-
-    // Print output
-    print!("Your results are: ");
-    for n in rolls { 
-        print!("{} ", n.floor() as u32);
-    }
-    println!("\nFor a total of {}", total);
-
-    return (total, rolls);
 }
