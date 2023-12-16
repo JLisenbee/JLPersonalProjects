@@ -1,3 +1,4 @@
+use std::io::{stdin, stdout, Read, Write};
 struct Dice {
     num: u32,   // Number of dice to roll
     face: u32,  // Highest value face on the dice
@@ -49,6 +50,9 @@ fn main() {
 
     println!("");
 
+    // Pause the Program so the user can read it
+    pause();
+
 }
 
 // Parses the user input and creates a Dice struct for ease of use through the program
@@ -92,6 +96,7 @@ fn parser(input: &Vec<char>) -> Dice
     return newdie;
 }
 
+// Retreives user input and returns it as a char array.
 fn get_die() -> Vec<char> 
 {
     // Prompt for die
@@ -111,4 +116,12 @@ fn get_die() -> Vec<char>
     }
 
     return input;
+}
+
+// Pauses the program so it doesn't immediately end in release mode
+fn pause() {
+    let mut stdout = stdout();
+    stdout.write(b"Press Enter to continue...").unwrap();
+    stdout.flush().unwrap();
+    stdin().read(&mut [0]).unwrap();
 }

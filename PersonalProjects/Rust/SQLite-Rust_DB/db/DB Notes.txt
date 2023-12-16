@@ -1,0 +1,37 @@
+MECHS
+1-to-1 with:
+ARMOR
+----------------
+Chassis: String (Default: "") **PK**
+Model: String (Default: "") **PK**
+
+
+ARMOR
+1-to-1 with:
+MECHS
+----------------
+Chassis: String (Default: "") **PK**
+Model: String (Default: "") **PK**
+Armor: Int (Default: 0) [DERIVED] Total of all section fields
+Head: Int (Default: 0) [RESTRICTED] Greater than or equal to zero
+Center Torso: Int (Default: 0) [RESTRICTED] Greater than zero
+Center Torso Rear: Int (Default: 0) [RESTRICTED] Greater than zero
+Right Torso: Int (Default: 0) [RESTRICTED] Greater than zero
+Right Torso Rear: Int (Default: 0) [RESTRICTED] Greater than zero
+Left Torso: Int (Default: 0) [RESTRICTED] Greater than zero
+Left Torso Rear: Int (Default: 0) [RESTRICTED] Greater than zero
+Right Arm: Int (Default: 0) [RESTRICTED] Greater than zero
+Left Arm: Int (Default: 0) [RESTRICTED] Greater than zero
+Right Leg: Int (Default: 0) [RESTRICTED] Greater than zero
+Left Leg: Int (Default: 0) [RESTRICTED] Greater than zero
+
+
+SPEED
+1-to-1 with:
+MECHS
+----------------
+Chassis: String (Default: "") **PK**
+Model: String (Default: "") **PK**
+Walk: Int (Default 0) [RESTRICTED] Greater than zero
+Run: Int (Default 0) [DERIVED] Walk Speed * 1.5 (Rounded Up)
+Jump: Int (Default 0) [RESTRICTED] Greater than zero
