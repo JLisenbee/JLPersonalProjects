@@ -1,6 +1,0 @@
-[package]
-name = "dice_roller"
-version = "0.0.1"
-
-[dependencies]
-rand = "0.8.5"
