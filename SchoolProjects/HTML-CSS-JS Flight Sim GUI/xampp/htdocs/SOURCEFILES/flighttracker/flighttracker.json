@@ -1,0 +1,26 @@
+[
+    {
+    "name": "Galaga",
+    "description": "Galaga (ギャラガ Gyaraga?) is a fixed shooter arcade game developed and published by Namco in Japan and published by Midway in North America in 1981. It is the sequel to Galaxian, released in 1979. The gameplay of Galaga puts the player in control of a space ship which is situated on the bottom of the screen. At the beginning of each stage, the area is empty, but over time, enemy aliens fly in formation, and once all of the enemies arrive on screen, they will come down at the player's ship in formations of one or more and may either shoot it or collide with it. During the entire stage, the player may fire upon the enemies, and once all enemies are vanquished, the player moves onto the next stage.",
+    "logo": "games/galaga",
+    "year": "1981"
+    },
+    {
+    "name": "Pac-Man",
+    "description": "The player controls Pac-Man through a maze, eating pac-dots (also called pellets). When all pac-dots are eaten, Pac-Man is taken to the next stage. Between some stages one of three intermission animations plays. Four enemies (Blinky, Pinky, Inky and Clyde) roam the maze, trying to catch Pac-Man. If an enemy touches Pac-Man, a life is lost and the Pac-Man itself withers and dies. When all lives have been lost, the game ends. Pac-Man is awarded a single bonus life at 10,000 points by default. Near the corners of the maze are four larger, flashing dots known as power pellets that provide Pac-Man with the temporary ability to eat the enemies.",
+    "logo": "games/pac-man",
+    "year": "1980"
+    },
+    {
+    "name": "Asteroids",
+    "description": "Your space craft is dangerously situated among fast moving asteroids in an asteroid belt that can destroy your ship on contact. Armed with a front mounted weapon and the ability to hyperspace, you fly through the debris, destroying each rock one piece at a time. Alien saucers visit the playfield from time to time with an eye towards destroying your ship! The objective of Asteroids is to score as many points as possible by destroying asteroids and flying saucers.",
+    "logo": "games/asteroids",
+    "year": "1979"
+    },
+    {
+    "name": "Dig Dug",
+    "description": "The objective of Dig Dug is to eliminate underground-dwelling monsters, either by inflating them with an air pump until they explode or by dropping rocks on them. There are two kinds of enemies in the game: 'Pookas' (a race of cute round red monsters, said to be modeled after tomatoes, that wear yellow goggles) and 'Fygars' (a race of green dragons that can breathe fire when their wings flash).",
+    "logo": "games/digdug",
+    "year": "1982"
+    }
+]

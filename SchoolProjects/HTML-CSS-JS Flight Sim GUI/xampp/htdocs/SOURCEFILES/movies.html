@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="menu.css">
+	</head>
+	<body>
+		<div class="header">
+			<img src="homeButton.png" alt="Return to the Home Page" onclick="goHome('home/home.html')" style="border:1px solid black; padding:5px" width="128px" height="128px"> 
+			<h1 style="justify-self: center;">Movies</h2> 
+			<h1 id="clock" class="clock" onload="clock()">Clock</h2>
+		</div>
+		
+		<div class="demo menu"></div>
+		
+		<div class="footer">
+            <img class="button" id="callButton" src="callButton.png" alt="Call for Help" onclick="alert('A Flight Attendant is on the way!')" width="128px" height="128px">
+            <img class="button" id="emergencyButton" src="emergencyButton.png" alt="Alert of An Emergency" onclick="alert('Emergency! Staff Notified!')" width="128px" height="128px">
+        </div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script dataFile="movies.json" src="loadData.js"></script>
+		<script src="templateActions.js"></script>
+		<script src="clock.js"></script>
+
+	</body>
+</html> 
+ 

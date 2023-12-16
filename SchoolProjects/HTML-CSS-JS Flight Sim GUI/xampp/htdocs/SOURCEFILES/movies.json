@@ -1,0 +1,26 @@
+[
+    {
+    "title": "Minions: The Rise of Gru",
+    "description": "Minions: The Rise of Gru is a 2022 American computer-animated comedy film produced by Illumination and distributed by Universal Pictures. It is the sequel to the spin-off prequel Minions (2015) and the fifth entry overall in the Despicable Me franchise. Directed by Kyle Balda, with Brad Ableson and Jonathan del Val as co-directors, the film features Steve Carell reprising his role as Gru and Pierre Coffin as the Minions, with Taraji P. Henson, Michelle Yeoh, RZA, Jean-Claude Van Damme, Lucy Lawless, Dolph Lundgren, Danny Trejo, Russell Brand, Julie Andrews, and Alan Arkin also starring.",
+    "poster": "movies/Minions_The_Rise_of_Gru_poster.jpg.png",
+    "year": "2022"
+    },
+    {
+    "title": "National Treasure",
+    "description": "National Treasure is a 2004 American action-adventure film released by Walt Disney Pictures. It was written by Jim Kouf and the Wibberleys, produced by Jerry Bruckheimer and directed by Jon Turteltaub. It is the first film in the National Treasure film series and stars Nicolas Cage, Harvey Keitel, Jon Voight, Diane Kruger, Sean Bean, Justin Bartha, and Christopher Plummer. Cage plays Benjamin Franklin Gates, a historian and amateur cryptographer searching for a huge lost treasure of precious metals, jewelry, artwork, statues, and many other historic artifacts accumulated over time, becoming a massive stockpile. All of it was eventually hidden away by American Freemasons during the American Revolutionary War. A coded, unseen map, placed on the back of the Declaration of Independence points to the secret location of this 'national treasure', but Gates is not alone in his quest: Whoever can steal the Declaration, find the map, and decode it first, will discover the greatest treasure ever accumulated in history",
+    "poster": "movies/national_treasure.png",
+    "year": "2004"
+    },
+    {
+    "title": "Ocean's Eleven",
+    "description": "Ocean's Eleven is a 2001 American heist comedy film directed by Steven Soderbergh and written by Ted Griffin. The first installment of the Ocean's franchise, it is a remake of the 1960 Rat Pack film of the same name. Ocean's Eleven features an ensemble cast, including George Clooney, Brad Pitt, Matt Damon, Don Cheadle, Andy García, Bernie Mac and Julia Roberts. The story follows friends Danny Ocean (Clooney) and Rusty Ryan (Pitt), who plan a heist of $160 million from casino owner Terry Benedict (García), the lover of Ocean's ex-wife Tess (Roberts).",
+    "poster": "movies/Oceans_Eleven_2001_Poster.png",
+    "year": "1979"
+    },
+    {
+    "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "description": "Pirates of the Caribbean: The Curse of the Black Pearl is a 2003 American fantasy swashbuckler film directed by Gore Verbinski and the first film in the Pirates of the Caribbean film series. Produced by Walt Disney Pictures and Jerry Bruckheimer, the film is based on Walt Disney's Pirates of the Caribbean attraction at Disney theme parks.[3] The story follows pirate Jack Sparrow (Johnny Depp) and blacksmith Will Turner (Orlando Bloom) as they rescue the kidnapped Elizabeth Swann (Keira Knightley) from the cursed crew of the Black Pearl, captained by Hector Barbossa (Geoffrey Rush), who become undead skeletons in moonlight.",
+    "poster": "movies/Pirates_of_the_Caribbean_-_The_Curse_of_the_Black_Pearl.png",
+    "year": "1982"
+    }
+]

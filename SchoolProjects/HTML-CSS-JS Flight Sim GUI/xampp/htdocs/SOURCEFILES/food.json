@@ -1,0 +1,37 @@
+[
+    {
+    "title": "Beatrix Market Chia Seed Pudding",
+    "description": "Beatrix Market's signature Chia Seed Pudding incorporates fresh mango and toasted coconut for a healthful, sweet treat all day long",
+    "poster": "food/Chia_Seed_Pudding.png",
+    "price": "10",
+    "miles": "100"
+    },
+    {
+    "title": "Asiago Bagel Sandwich",
+    "description": "Cage-free egg patty, cheddar cheese and bacon on an Asiago bagel",
+    "poster": "food/Asiago_Bagel_Sandwich.png",
+    "price": "15",
+    "miles": "150"
+    },
+    {
+    "title": "Beatrix Market Mediterranean Grain Bowl",
+    "description": "Beatrix Market's protein-packed grain bowl features bulgur, a black lentil and carrot salad, roasted zucchini and bell peppers and is served with a bright lemon vinaigrette",
+    "poster": "food/Mediterranean_Grain_Bowl.png",
+    "price": "20",
+    "miles": "200"
+    },
+    {
+    "title": "Brioche Burger with Bistro Sauce",
+    "description": "Beef patty topped with cheddar cheese, pickles, and bistro sauce on a buttery brioche bun",
+    "poster": "food/Brioche-Burger-with-Bistro-Sauce.png",
+    "price": "25",
+    "miles": "250"
+    },
+    {
+    "title": "Kindred Creamery® Selection Cheese Tray",
+    "description": "Cheddar cheese, gouda cheese, colby jack cheese, monterey jack cheese, crackers, dried cherry & almond mix",
+    "poster": "food/Kindred_Creamery_Selection_Cheese_Tray.png",
+    "price": "5",
+    "miles": "50"
+    }
+]

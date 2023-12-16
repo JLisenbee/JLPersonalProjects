@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="menu.css">
+	</head>
+	<body>
+		<div class="header">
+			<img src="homeButton.png" alt="Return to the Home Page" onclick="goHome('home/home.html')" style="border:1px solid black; padding:5px" width="128px" height="128px"> 
+			<h1 style="justify-self: center;">Food Menu</h2> 
+			<h1 id="clock" class="clock" onload="clock()">Clock</h2>
+		</div>
+		
+		<div class="demo menu">
+            <form class="phone" style="margin-right: auto; order: 10; margin-top: 1%;">
+                <label for="number">If you would like to add a phone call, enter a number and hit submit</label><br>
+                <input class="number" id="number" type="text" name="str" required="required" placeholder="Enter a Number" />
+                <button class="addNumber" type="button">Submit</button>
+            </form>
+
+            <form class="reciept" style="margin-right: auto; order: 10; margin-top: 1%;">
+                <span>How would you like your reciept?</br></span>
+                <button class="byEmail reciept" type="button" style="width: 128px; height: 128px;">Email</button>
+                <button class="byText reciept" type="button" style="width: 128px; height: 128px;">SMS</button>
+            </form>
+        </div>
+		
+		<div class="footer">
+            <form class="opts" style="margin-right: auto">
+                <button id="checkout" type="button" style="width: 128px; height: 128px;">Checkout</button>
+            </form>
+            <img class="button" id="callButton" src="callButton.png" alt="Call for Help" onclick="alert('A Flight Attendant is on the way!')" width="128px" height="128px">
+            <img class="button" id="emergencyButton" src="emergencyButton.png" alt="Alert of An Emergency" onclick="alert('Emergency! Staff Notified!')" width="128px" height="128px">
+        </div>
+
+        
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script dataFile="food.json" src="loadData.js"></script>
+        <script dataFile="food.json" src="cart.js"></script>
+		<script src="templateActions.js"></script>
+		<script src="clock.js"></script>
+
+	</body>
+</html> 
+ 

@@ -1,0 +1,62 @@
+.demo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  gap:10px;
+  height: 65vh;
+}
+
+.info {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  border: 3px dotted black;
+  text-align: left;
+  font-size: 24px;
+}
+
+.map {
+  border: 3px dotted black;
+  max-height: 65vh;
+}
+
+.logo {
+  grid-column: 1 / span 2;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 128px 128px 128px;
+  justify-content: stretch;
+  column-gap: 35vw;
+  padding: 5px;
+  height: 15vh
+}
+
+.clock {
+  border:1px solid black;
+  justify-self: right;
+  align-self: center;
+  width: 15vw;
+}
+
+.footer {
+  height: 15vh;
+  padding: 5px;
+  height:10vh;
+  text-justify: right;
+}
+
+.buttons {
+  border:1px solid black; 
+  padding:5px; 
+  width:15vh;
+  height:15vh;
+}
+
+.listheads {
+  text-decoration: underline;
+  font-weight: bold;
+}

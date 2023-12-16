@@ -1,0 +1,51 @@
+.demo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  height: 65vh;
+}
+
+.item {
+  display: grid;
+  grid-template-rows: 1fr .5fr;
+  text-align: center;
+  gap:5px;
+  border: 3px dotted black;
+}
+
+.title {
+  text-transform: uppercase;
+  text-transform: bold;
+  font-size: 96px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 128px 128px 128px;
+  justify-content: stretch;
+  column-gap: 35vw;
+  padding: 5px;
+  height: 15vh
+}
+
+.clock {
+  border:1px solid black;
+  justify-self: right;
+  align-self: center;
+  width: 15vw;
+}
+
+.footer {
+  height: 15vh;
+  padding: 5px;
+  height:10vh;
+  text-justify: right;
+}
+
+.buttons {
+  border:1px solid black; 
+  padding:5px; 
+  width:15vh;
+  height:15vh;
+}

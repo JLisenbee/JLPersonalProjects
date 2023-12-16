@@ -1,0 +1,107 @@
+1:06:34 PM  [main] 	Initializing Control Panel
+1:06:34 PM  [main] 	Windows Version:  Home  64-bit
+1:06:34 PM  [main] 	XAMPP Version: 8.1.6
+1:06:34 PM  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+1:06:34 PM  [main] 	You are not running with administrator rights! This will work for
+1:06:34 PM  [main] 	most application stuff but whenever you do something with services
+1:06:34 PM  [main] 	there will be a security dialogue or things will break! So think 
+1:06:34 PM  [main] 	about running this application with administrator rights!
+1:06:34 PM  [main] 	XAMPP Installation Directory: "c:\users\jakel\documents\github\team11project\xampp\"
+1:06:34 PM  [main] 	Checking for prerequisites
+1:06:35 PM  [main] 	All prerequisites found
+1:06:35 PM  [main] 	Initializing Modules
+1:06:35 PM  [mysql] 	XAMPP MySQL is already running on port 3306
+1:06:35 PM  [main] 	Starting Check-Timer
+1:06:35 PM  [main] 	Control Panel Ready
+1:06:39 PM  [mysql] 	Attempting to stop MySQL app...
+1:06:39 PM  [mysql] 	Status change detected: stopped
+1:09:03 PM  [Apache] 	Attempting to start Apache app...
+1:09:04 PM  [Apache] 	Status change detected: running
+1:16:14 PM  [main] 	Executing "c:\users\jakel\documents\github\team11project\xampp\"
+1:17:06 PM  [main] 	Executing "services.msc"
+1:19:20 PM  [Apache] 	Status change detected: stopped
+1:19:20 PM  [Apache] 	Error: Apache shutdown unexpectedly.
+1:19:20 PM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+1:19:20 PM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+1:19:20 PM  [Apache] 	Press the Logs button to view error logs and check
+1:19:20 PM  [Apache] 	the Windows Event Viewer for more clues
+1:19:20 PM  [Apache] 	If you need more help, copy and post this
+1:19:20 PM  [Apache] 	entire log window on the forums
+1:19:33 PM  [Apache] 	Status change detected: running
+1:27:19 PM  [Apache] 	Status change detected: stopped
+1:27:19 PM  [Apache] 	Error: Apache shutdown unexpectedly.
+1:27:19 PM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+1:27:19 PM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+1:27:19 PM  [Apache] 	Press the Logs button to view error logs and check
+1:27:19 PM  [Apache] 	the Windows Event Viewer for more clues
+1:27:19 PM  [Apache] 	If you need more help, copy and post this
+1:27:19 PM  [Apache] 	entire log window on the forums
+1:28:21 PM  [Apache] 	Status change detected: running
+4:03:54 PM  [Apache] 	Status change detected: stopped
+4:03:54 PM  [Apache] 	Error: Apache shutdown unexpectedly.
+4:03:54 PM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+4:03:54 PM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+4:03:54 PM  [Apache] 	Press the Logs button to view error logs and check
+4:03:54 PM  [Apache] 	the Windows Event Viewer for more clues
+4:03:54 PM  [Apache] 	If you need more help, copy and post this
+4:03:54 PM  [Apache] 	entire log window on the forums
+11:17:21 PM  [main] 	Deinitializing Modules
+11:17:21 PM  [main] 	Deinitializing Control Panel
+
+1:19:18 PM  [main] 	Initializing Control Panel
+1:19:18 PM  [main] 	Windows Version:  Home  64-bit
+1:19:18 PM  [main] 	XAMPP Version: 8.1.6
+1:19:18 PM  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+1:19:18 PM  [main] 	You are not running with administrator rights! This will work for
+1:19:18 PM  [main] 	most application stuff but whenever you do something with services
+1:19:18 PM  [main] 	there will be a security dialogue or things will break! So think 
+1:19:18 PM  [main] 	about running this application with administrator rights!
+1:19:18 PM  [main] 	XAMPP Installation Directory: "c:\users\jakel\documents\github\team11project\xampp\"
+1:19:18 PM  [main] 	Checking for prerequisites
+1:19:18 PM  [main] 	All prerequisites found
+1:19:18 PM  [main] 	Initializing Modules
+1:19:18 PM  [Apache] 	XAMPP Apache is already running on port 80
+1:19:18 PM  [Apache] 	XAMPP Apache is already running on port 443
+1:19:18 PM  [main] 	Starting Check-Timer
+1:19:18 PM  [main] 	Control Panel Ready
+1:19:20 PM  [Apache] 	Attempting to stop Apache (PID: 18592)
+1:19:20 PM  [Apache] 	Attempting to stop Apache (PID: 22720)
+1:19:20 PM  [Apache] 	Status change detected: stopped
+1:19:28 PM  [main] 	Executing "c:\users\jakel\documents\github\team11project\xampp\"
+1:19:32 PM  [Apache] 	Attempting to start Apache app...
+1:19:32 PM  [Apache] 	Status change detected: running
+1:27:19 PM  [Apache] 	Attempting to stop Apache (PID: 25520)
+1:27:19 PM  [Apache] 	Attempting to stop Apache (PID: 4512)
+1:27:19 PM  [Apache] 	Status change detected: stopped
+1:28:21 PM  [Apache] 	Status change detected: running
+4:03:54 PM  [Apache] 	Status change detected: stopped
+11:17:26 PM  [main] 	Deinitializing Modules
+11:17:26 PM  [main] 	Deinitializing Control Panel
+
+1:28:19 PM  [main] 	Initializing Control Panel
+1:28:19 PM  [main] 	Windows Version:  Home  64-bit
+1:28:19 PM  [main] 	XAMPP Version: 8.1.6
+1:28:19 PM  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+1:28:19 PM  [main] 	You are not running with administrator rights! This will work for
+1:28:19 PM  [main] 	most application stuff but whenever you do something with services
+1:28:19 PM  [main] 	there will be a security dialogue or things will break! So think 
+1:28:19 PM  [main] 	about running this application with administrator rights!
+1:28:19 PM  [main] 	XAMPP Installation Directory: "c:\users\jakel\documents\github\team11project\xampp\"
+1:28:19 PM  [main] 	Checking for prerequisites
+1:28:19 PM  [main] 	All prerequisites found
+1:28:19 PM  [main] 	Initializing Modules
+1:28:19 PM  [main] 	Starting Check-Timer
+1:28:19 PM  [main] 	Control Panel Ready
+1:28:21 PM  [Apache] 	Attempting to start Apache app...
+1:28:21 PM  [Apache] 	Status change detected: running
+4:03:54 PM  [Apache] 	Status change detected: stopped
+4:03:54 PM  [Apache] 	Error: Apache shutdown unexpectedly.
+4:03:54 PM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+4:03:54 PM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+4:03:54 PM  [Apache] 	Press the Logs button to view error logs and check
+4:03:54 PM  [Apache] 	the Windows Event Viewer for more clues
+4:03:54 PM  [Apache] 	If you need more help, copy and post this
+4:03:54 PM  [Apache] 	entire log window on the forums
+11:17:29 PM  [main] 	Deinitializing Modules
+11:17:29 PM  [main] 	Deinitializing Control Panel
+

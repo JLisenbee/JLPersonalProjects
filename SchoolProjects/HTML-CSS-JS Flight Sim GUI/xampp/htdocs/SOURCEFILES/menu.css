@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: Arial, Verdana, sans-serif;
+  /* height: 100vh; */
+  /* width: 100vw; */
+}
+
+.menu {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.entry {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 30vh;
+  width: 90vw;
+  margin-top: 1%;
+
+}
+.textFields {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  margin-right: 1%;
+}
+
+.textFields div:first-child {
+  vertical-align: top;
+  padding-bottom: 15px;
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 2.5vw;
+}
+
+.price {
+  padding: 0 0 0 0;
+  height: auto;
+}
+
+.poster {
+  padding-right: 2%;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+}
+
+.title {
+  text-transform: uppercase;
+  text-transform: bold;
+  font-size: 96px;
+}
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  width: 95vw;
+  padding: 5px;
+}
+
+.clock {
+  border:1px solid black;
+  justify-self: right;
+  align-self: center;
+  width: 15vw;
+}
+
+.footer {
+  padding: 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+
+.button {
+  border: 1px solid black;
+  margin-right: 1%;
+}
