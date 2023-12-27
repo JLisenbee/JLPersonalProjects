@@ -1,6 +1,6 @@
 # What this is
 
-This is a basic in-flight entertainment system built using some boilerplate CSS + Javascript with mostly HTML elements for the buttons and things.
+This is a functional in-flight entertainment system built as part of a group project with CSS + JavaScript at it's core on top an HTML framework.
 
 # How to view this
 
