@@ -1,0 +1,5 @@
+Sorting Algorithms
+- Displays set of data at each step
+- Randomly Generated Values
+- Sort Ideas: Bubble Sort, Insertion Sort, Selection Sort, Merge Sort, Quick Sort, Bucket Sort
+- Funny Sort Ideas: Stalin Sort, Bogo Sort
