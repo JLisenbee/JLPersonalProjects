@@ -15,10 +15,3 @@ I respond to phone/text inquiries the fastest, and email inquiries the next most
 * <b>Email:<b> jakelisenbee@gmail.com
 * <b>LinkedIn:<b> https://www.linkedin.com/in/jake-lisenbee-62aa43142/
 
-## To Do
-* Upload Linux Shell project (421)
-* Upload x86 Assembly Projects (313)
-* Upload ASM64 Assembly Projects (411)
-* Upload Web Projects (172)
-* Upload Rust and Python projects stubs from School DB to this repo
-* Upload Snowball Unity Game ()

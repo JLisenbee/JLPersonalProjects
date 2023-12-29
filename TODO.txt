@@ -3,3 +3,11 @@ Sorting Algorithms
 - Randomly Generated Values
 - Sort Ideas: Bubble Sort, Insertion Sort, Selection Sort, Merge Sort, Quick Sort, Bucket Sort
 - Funny Sort Ideas: Stalin Sort, Bogo Sort
+
+Upload Existing Projects
+- Upload Linux Shell project (421)
+- Upload x86 Assembly Projects (313)
+- Upload ASM64 Assembly Projects (411)
+- Upload Web Projects (172)
+- Upload Rust and Python projects stubs from School DB to this repo
+- Upload Snowball Unity Game ()
