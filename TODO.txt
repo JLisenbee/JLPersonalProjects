@@ -1,3 +1,8 @@
+MechDB SQL
+- Finalize Architecture (Role in Main Table)
+- Create functions in frontend for Create, Read, Update, and Delete
+- Design Frontend for TKinter
+
 Sorting Algorithms
 - Displays set of data at each step
 - Randomly Generated Values
