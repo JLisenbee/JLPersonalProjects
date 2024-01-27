@@ -1,0 +1,9 @@
+Jagermech       s   75 fire-support 4 0
+enforcer        4r  50 skirmisher   4 4
+awesome         8q  80 Fire-Support 3 0
+hunchback       4g  50 brawler      4 0
+griffin         1n  55 skirmisher   5 5
+centurion       A   55 brawler      4 0
+battlemaster    1g  85 brawler      4 0
+stalker         3f  85 brawler      3 0
+stalker         3h  85 fire-support 3 0

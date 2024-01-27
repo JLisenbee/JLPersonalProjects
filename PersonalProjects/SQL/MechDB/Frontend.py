@@ -1,6 +1,15 @@
 import sqlite3
+from tkinter import *
+from tkinter import ttk
 
-## initiate tables
+## Reloads the mechs from the input file
+def load_mechs():
+    fileinput = open("db/LIST.txt").read().splitlines()
+    for mechline in fileinput:
+        attr = mechline.split()
+        insert(cur, attr[0], attr[1], attr[2], attr[3], attr[4], attr[5])
+
+## initiate the database
 def init(cur: sqlite3.Cursor):
     cur.execute("""CREATE TABLE IF NOT EXISTS roles (
             role TEXT NOT NULL,
@@ -26,7 +35,9 @@ def init(cur: sqlite3.Cursor):
             FOREIGN KEY (chassis) REFERENCES mechs(chassis),
             FOREIGN KEY (model) REFERENCES mechs(model)
             )""")
-    
+
+    load_mechs()
+
     return True
     
 ## Insert an entry into the database
@@ -73,8 +84,9 @@ def print_tables(cur: sqlite3.Cursor):
 
     return True
 
+## Query DB to get all the mechs
 def get_mechs(cur: sqlite3.Cursor):
-    sql = "SELECT * FROM mechs JOIN speed USING(chassis, model)"
+    sql = "SELECT * FROM mechs JOIN speed USING(chassis, model) ORDER BY chassis, model"
     args = ()
     cur.execute(sql, args)
 
@@ -82,25 +94,65 @@ def get_mechs(cur: sqlite3.Cursor):
 
 
 
+
 ########### ENTRY POINT ###########
-
 db = sqlite3.connect("db/mechs.db")
-
 cur = db.cursor()
 
 ## initiate tables
 init(cur)
 
-## Add some stuff to those tables by reading from the LIST.txt file
-fileinput = open("db/LIST.txt").read().splitlines()
+## TK window
+root = Tk()
+root.geometry("500x500")
+frm = ttk.Frame(root)
+frm.grid()
+ttk.Button(frm, text="Quit", command=root.destroy).grid(column=0, row=0)
 
-for mechline in fileinput:
-    attr = mechline.split()
-    insert(cur, attr[0], attr[1], attr[2], attr[3], attr[4], attr[5])
+chassis = StringVar()
+model = StringVar()
+weight = StringVar()
+role = StringVar()
+walk = StringVar()
+jump = StringVar()
+output = StringVar()
+
+ttk.Label(frm, text="Chassis", width=10).grid(column=0, row=1)
+Entry(frm, textvariable = chassis).grid(column=1, row=1)
+
+ttk.Label(frm, text="Model", width=10).grid(column=0, row=2)
+Entry(frm, textvariable = model).grid(column=1, row=2)
+
+ttk.Label(frm, text="Weight", width=10).grid(column=0, row=3)
+Entry(frm, textvariable = weight).grid(column=1, row=3)
+
+ttk.Label(frm, text="Role", width=10).grid(column=0, row=4)
+Entry(frm, textvariable = role).grid(column=1, row=4)
+
+ttk.Label(frm, text="Walk", width=10).grid(column=0, row=5)
+Entry(frm, textvariable = walk).grid(column=1, row=5)
+
+ttk.Label(frm, text="Jump", width=10).grid(column=0, row=6)
+Entry(frm, textvariable = jump).grid(column=1, row=6)
+
+Label(frm, width=10, textvariable= output).grid(column=0, row=8)
+
+def insert_from_gui():
+    insert(cur, chassis.get(), model.get(), int(weight.get()), role.get(), int(walk.get()), int(jump.get()))
+    output.set("Submitted")
+
+    
+
+ttk.Button(frm, text="Submit", command=insert_from_gui).grid(column=0, row=7)
+
+root.mainloop()
+
+
 
 ## Print the tables
 for mech in get_mechs(cur):
     print(mech)
 
 ## Close the DB
+db.commit()
 db.close()
