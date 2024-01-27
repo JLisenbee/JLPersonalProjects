@@ -1,6 +1,4 @@
 import sqlite3
-from tkinter import *
-from tkinter import ttk
 
 ## initiate tables
 def init(cur: sqlite3.Cursor):
@@ -93,49 +91,12 @@ cur = db.cursor()
 ## initiate tables
 init(cur)
 
-## Add some stuff to those tables
-insert(cur, "Jagermech", "s", 75, "anti air", 4, 0)
-insert(cur, "enforcer", "4r", 50, "skirmisher", 4, 4)
-insert(cur, "awesome", "8q", 80, "Fire Support", 3, 0)
-insert(cur, "hunchback", "4g", 50, "brawler", 4, 0)
-insert(cur, "griffin", "1n", 55, "skirmisher", 5, 5)
-insert(cur, "centurion", "A", 55, "brawler", 4, 0)
+## Add some stuff to those tables by reading from the LIST.txt file
+fileinput = open("db/LIST.txt").read().splitlines()
 
-root = Tk()
-frame = ttk.Frame(root, padding = 10)
-frame.grid()
-ttk.Label(frame, text="Name", font="Courier 24 bold").grid(column=0, row=0, padx=10, pady=10, columnspan=2)        ## Combined Chassis and Model
-ttk.Label(frame, text="Tonnage", font="Courier 24 bold").grid(column=2, row=0, padx=10, pady=10, columnspan=2)     
-ttk.Label(frame, text="Role", font="Courier 24 bold").grid(column=4, row=0, padx=10, pady=10, columnspan=2)
-ttk.Label(frame, text="Movement", font="Courier 24 bold").grid(column=6, row=0, padx=10, pady=10, columnspan=2)    ## Combined Walk/Run/Jump
-
-i = 1
-for mech in get_mechs(cur):
-    ttk.Label(frame, text=mech[0] + "-" + mech[1], font="Courier 18").grid(column=0, row=i, padx=5, pady=5, sticky=W, columnspan=2)
-    ttk.Label(frame, text=mech[2], font="Courier 18").grid(column=2, row=i, padx=5, pady=5, columnspan=2)
-    ttk.Label(frame, text=mech[3], font="Courier 18").grid(column=4, row=i, padx=5, pady=5, columnspan=2)
-    ttk.Label(frame, text=str(mech[4]) + "/" + str(mech[5]) + "/" + str(mech[6]), font="Courier 18").grid(column=6, row=i, padx=5, pady=5, columnspan=2)
-    i+=1
-
-## Button and text boxes to make more
-chassis = ""
-model = ""
-weight = 0
-role = ""
-walk = 0
-jump = 0
-
-def new_entry():
-    insert(cur, chassis, model, weight, role, walk, jump)
-chassis_text = Entry(frame, font="Courier 18", textvariable=chassis).grid(column=0, row=i, sticky=W)
-model_text = Entry(frame, font="Courier 18", textvariable=model).grid(column=1, row=i, sticky=E)
-weight_text = Entry(frame, font="Courier 18", textvariable=weight).grid(column=2, row=i, columnspan=2)
-role_text = Entry(frame, font="Courier 18", textvariable=role).grid(column=4, row=i, columnspan=2)
-walk_text = Entry(frame, font="Courier 18", textvariable=walk).grid(column=6, row=i, sticky=W)
-jump_text = Entry(frame, font="Courier 18", textvariable=jump).grid(column=7, row=i, sticky=E)
-new_button = Button(frame, text="Enter", font="Courier 18", command=new_entry).grid(column=8, row=i)
-
-root.mainloop()
+for mechline in fileinput:
+    attr = mechline.split()
+    insert(cur, attr[0], attr[1], attr[2], attr[3], attr[4], attr[5])
 
 ## Print the tables
 for mech in get_mechs(cur):
