@@ -1,7 +1,7 @@
 ## What is this?
 
-This is a simple Database in SQLite3 with a python query manager.
+This is a simple Database in SQLite3 with a python query manager and basic front end.
 
 ## How do I use this?
 
-TBD, Determined on Completion
+Best excecuted through the command line. "python frontend.py" from this directory works just fine. Prints contents of the DB on exit.
