@@ -9,14 +9,13 @@ fn main() {
 
     // Randomize Dataset
     fastrand::shuffle(&mut data);
-
     for n in &data {
         print!("{} ", n);
     }
 
     // Common Sorts
     
-    // **** Bubble Sort ****
+    // **** Bubble Sort **** //
     for i in 0..data.len()-1 {
         for j in 0..data.len()-i-1 {
             if data[j] > data[j+1] {
@@ -28,27 +27,57 @@ fn main() {
         }
     }
     println!("");
-    println!("");
     for n in &data {
         print!("{} ", n);
     }
-    fastrand::shuffle(&mut data);
+    println!("");
+    println!("");
 
-    
-    // **** Insertion Sort ****
+    // Randomize Dataset
+    fastrand::shuffle(&mut data);
+    for n in &data {
+        print!("{} ", n);
+    }
+    println!("");
+
+
+    // **** Selection Sort **** //
     for i in 0..data.len() {
-        let mut min: u32= 0;
-        for j in i..data.len()-1 {
-            if j < min {
-                min = j;
+        let mut smallest = data[i];
+        let mut ismall = i;
+        for j in i..data.len() {
+            // find the smallest number from i to end
+            if data[j] < smallest {
+                smallest = data[j];
+                ismall = j;
             }
         }
-        data[i] = 
+        //At this point you've found the smallest item, so swap them
+        let temp = data[ismall];
+        data[ismall] = data[i];
+        data[i] = temp;
+    }
+    for n in &data {
+        print!("{} ", n);
+    }
+    println!("");
+    println!("");
+
+    // Randomize Dataset
+    fastrand::shuffle(&mut data);
+    for n in &data {
+        print!("{} ", n);
     }
 
-    // Selection Sort
-
     // Merge Sort
+    fn mergesort(array: Vec<u32>) {
+        if (array.len() == 1){
+            // Merge together and return
+        }
+        else {
+            
+        }
+    }
 
     // Quick Sort
 
