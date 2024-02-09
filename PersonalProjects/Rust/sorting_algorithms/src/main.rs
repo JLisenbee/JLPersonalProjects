@@ -1,4 +1,6 @@
 
+
+
 fn main() {
     
     // Create a list of values from 1 to 100
@@ -70,14 +72,33 @@ fn main() {
     }
 
     // Merge Sort
-    fn mergesort(array: Vec<u32>) {
-        if (array.len() == 1){
-            // Merge together and return
+    fn mergesort(array: Vec<u32>) -> Vec<u32>{
+        if array.len() == 1 {
+            return array;
         }
         else {
+            // Compare first elements in the array, and return a combined array with the sub arrays correctly ordered
+            let sub1= mergesort(array[..array.len()/2].to_vec());
+            let sub2= mergesort(array[array.len()/2..].to_vec());
+
+            println!("sub1[0]: {}\n sub2[0]: {}\n", sub1[0], sub2[0]);
             
+            if sub1[0] > sub2[0] {
+                return [sub1, sub2].concat();
+            }
+            else {
+                return [sub2, sub1].concat();
+            }
         }
     }
+    data = mergesort(data); // Perform Sort
+
+    for n in &data {
+        print!("{} ", n);
+    }
+    println!("");
+    println!("");
+
 
     // Quick Sort
 
@@ -89,4 +110,6 @@ fn main() {
     // Stalin Sort
 
     // Bogo Sort
+
+    // Sleep Sort
 }
