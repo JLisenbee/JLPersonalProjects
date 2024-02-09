@@ -1,6 +1,3 @@
-use std::thread;
-use std::time::Duration;
-
 fn main() {
     
     // Create a list of values from 1 to 100
@@ -70,6 +67,7 @@ fn main() {
     for n in &data {
         print!("{} ", n);
     }
+    println!("");
 
     // **** Merge Sort ****
     /* 
@@ -105,11 +103,54 @@ fn main() {
 
     // Silly Sorts
 
-    // Stalin Sort
+    // ***Stalin Sort***
+    let mut gulag: Vec<u32> = Vec::new();
+    gulag.resize(data.len(), 0);
+    gulag.copy_from_slice(&data[..]);
 
-    // Bogo Sort
+    // Like bubble sort, but you just do one pass and any elements that aren't in order are deleted. linear time, but lossy
+    let mut i = 0;
+    while i < gulag.len()-1 {
+        if gulag[i+1] < gulag[i] {
+            gulag.remove(i+1);
+        }
+        else {
+            i += 1;
+        }
+    }
+
+    for m in &gulag {
+        print!("{} ", m);
+    }
+    println!("");
+    println!("");
+
+    // No need to reshuffle data
+
+    // **** Bogo Sort ****
+    fn is_sorted(arr: &Vec<u32>) -> bool {
+        for i in 0..arr.len()-1 {
+            if arr[i] > arr[i+1] {return false}
+        }
+        return true;
+    }
+
+    // Reshuffle until list is sorted. God help you.
+    let mut attempts = 0;
+    while !is_sorted(&data) {
+        fastrand::shuffle(&mut data);
+        attempts += 1;
+    }
+    println!("Number of Bogosort Attempts until list was sorted: {}", attempts);
+
+    for n in &data {
+        print!("{} ", n);
+    }
+    println!("");
+    println!("");
 
     // **** Sleep Sort ****
+    /* 
     let mut sleepy: Vec<u32> = Vec::new();
 
     // Make a seperate thread for each value in the array
@@ -135,5 +176,6 @@ fn main() {
     }
     println!("");
     println!("");
+    */
 
 }
