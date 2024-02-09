@@ -1,5 +1,5 @@
-
-
+use std::thread;
+use std::time::Duration;
 
 fn main() {
     
@@ -71,9 +71,10 @@ fn main() {
         print!("{} ", n);
     }
 
-    // Merge Sort
+    // **** Merge Sort ****
+    /* 
     fn mergesort(array: Vec<u32>) -> Vec<u32>{
-        if array.len() == 1 {
+        if array.len() <= 1 {
             return array;
         }
         else {
@@ -81,15 +82,11 @@ fn main() {
             let sub1= mergesort(array[..array.len()/2].to_vec());
             let sub2= mergesort(array[array.len()/2..].to_vec());
 
-            println!("sub1[0]: {}\n sub2[0]: {}\n", sub1[0], sub2[0]);
-            
-            if sub1[0] > sub2[0] {
-                return [sub1, sub2].concat();
-            }
-            else {
-                return [sub2, sub1].concat();
-            }
+            return merge(sub1, sub2);
         }
+    }
+    fn merge() -> Vec<u32>{
+
     }
     data = mergesort(data); // Perform Sort
 
@@ -98,6 +95,7 @@ fn main() {
     }
     println!("");
     println!("");
+    */
 
 
     // Quick Sort
@@ -111,5 +109,31 @@ fn main() {
 
     // Bogo Sort
 
-    // Sleep Sort
+    // **** Sleep Sort ****
+    let mut sleepy: Vec<u32> = Vec::new();
+
+    // Make a seperate thread for each value in the array
+    for i in 0..data.len() {
+        thread::scope(|s| {
+            s.spawn(|| {
+
+                let sleepdur = Duration::from_millis(data[i].into());
+                // Each thread sleeps for a number of milliseconds equal to it's value
+                thread::sleep(sleepdur);
+
+                // Value is then inserted into the sleepy array
+                sleepy.push(data[i]);
+            });
+        });
+    }
+
+    // move values from sleepy array to data array.
+    data = Vec::from(sleepy);
+
+    for n in &data {
+        print!("{} ", n);
+    }
+    println!("");
+    println!("");
+
 }
