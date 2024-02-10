@@ -1,13 +1,17 @@
-MechDB SQL
+MechDB SQL (Done)
 - Finalize Architecture (Role in Main Table)
 - Create functions in frontend for Create, Read, Update, and Delete
 - Design Frontend for TKinter
 
-Sorting Algorithms
+Sorting Algorithms (To Do: Merge Sort, Quick Sort, Bucket Sort)
 - Displays set of data at each step
 - Randomly Generated Values
 - Sort Ideas: Bubble Sort, Insertion Sort, Selection Sort, Merge Sort, Quick Sort, Bucket Sort
 - Funny Sort Ideas: Stalin Sort, Bogo Sort, Sleep Sort
+
+Irrational Number Calculator
+- Calculates some particularly relevent irrational numbers.
+- Numbers: Pi, e
 
 Upload Existing Projects
 - Upload Linux Shell project (421) (Must be reformatted first)
