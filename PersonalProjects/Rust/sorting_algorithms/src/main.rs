@@ -101,7 +101,8 @@ fn main() {
     // Bucket Sort
 
 
-    // Silly Sorts
+    // ******** Silly Sorts ******** //
+    // Only proceed if you have a sence of humor
 
     // ***Stalin Sort***
     let mut gulag: Vec<u32> = Vec::new();
@@ -148,34 +149,5 @@ fn main() {
     }
     println!("");
     println!("");
-
-    // **** Sleep Sort ****
-    /* 
-    let mut sleepy: Vec<u32> = Vec::new();
-
-    // Make a seperate thread for each value in the array
-    for i in 0..data.len() {
-        thread::scope(|s| {
-            s.spawn(|| {
-
-                let sleepdur = Duration::from_millis(data[i].into());
-                // Each thread sleeps for a number of milliseconds equal to it's value
-                thread::sleep(sleepdur);
-
-                // Value is then inserted into the sleepy array
-                sleepy.push(data[i]);
-            });
-        });
-    }
-
-    // move values from sleepy array to data array.
-    data = Vec::from(sleepy);
-
-    for n in &data {
-        print!("{} ", n);
-    }
-    println!("");
-    println!("");
-    */
 
 }
